@@ -7,7 +7,7 @@ This is still in an experimental package. It hasn't even been released to the At
 ## Getting Started
 
 ### Install Package
-Run `git clone https://github.com/atom-ide-community/ide-sourcekit.git ~/.atom/packages/ide-sourcekit`
+Run `git clone https://github.com/atom-ide-community/ide-sourcekit.git ~/.atom/packages/ide-sourcekit && cd ~/.atom/packages/ide-sourcekit && apm install`
 
 ### Install LSP Package
 
