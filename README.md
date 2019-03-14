@@ -1,13 +1,15 @@
 # IDE-SourceKit package
 
+[![Build Status](https://badgen.net/travis/atom-ide-community/ide-sourcekit/master)](https://travis-ci.org/atom-ide-community/ide-sourcekit)
+
 C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple.
 
-This is still in an experimental package. It hasn't even been released to the Atom package store yet.
+This is still in an **experimental** package.
 
 ## Getting Started
 
 ### Install Package
-Run `git clone https://github.com/atom-ide-community/ide-sourcekit.git ~/.atom/packages/ide-sourcekit && cd ~/.atom/packages/ide-sourcekit && apm install`
+Run `apm install ide-sourcekit`
 
 ### Install LSP Package
 
