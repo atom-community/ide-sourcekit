@@ -3,7 +3,17 @@
   "main": "./lib/main",
   "version": "0.0.0",
   "description": "EXPERIMENTAL: C, Objective-C, C++, and Swift language support for Atom-IDE.",
-  "keywords": ["atom-package", "atom-ide", "c", "cpp", "c++", "objective-c", "swift", "sourcekit", "apple"],
+  "keywords": [
+    "atom-package",
+    "atom-ide",
+    "c",
+    "cpp",
+    "c++",
+    "objective-c",
+    "swift",
+    "sourcekit",
+    "apple"
+  ],
   "repository": "https://github.com/atom-ide-community/ide-sourcekit",
   "license": "MIT",
   "engines": {
