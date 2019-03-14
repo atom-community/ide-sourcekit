@@ -1,0 +1,12 @@
+# 1.0.0 (2019-03-14)
+
+
+### Bug Fixes
+
+* build dependencies were not in package-lock.json ([b7bcf31](https://github.com/atom-ide-community/ide-sourcekit/commit/b7bcf31))
+
+
+### Features
+
+* add travis ci for auto-deploy builds ([c28c08e](https://github.com/atom-ide-community/ide-sourcekit/commit/c28c08e))
+* support more file extensions ([0ee2f24](https://github.com/atom-ide-community/ide-sourcekit/commit/0ee2f24)), closes [#1](https://github.com/atom-ide-community/ide-sourcekit/issues/1)
