@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/atom-ide-community/ide-sourcekit/compare/v1.0.0...v1.0.1) (2019-03-14)
+
+
+### Bug Fixes
+
+* remove console.log and use prettier ([d784714](https://github.com/atom-ide-community/ide-sourcekit/commit/d784714))
+
 # 1.0.0 (2019-03-14)
 
 
