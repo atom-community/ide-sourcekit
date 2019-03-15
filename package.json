@@ -2,7 +2,7 @@
   "name": "ide-sourcekit",
   "main": "./lib/main",
   "version": "1.0.0",
-  "description": "EXPERIMENTAL: C, Objective-C, C++, and Swift language support for Atom-IDE.",
+  "description": "EXPERIMENTAL: Swift language support for Atom-IDE. C, Objective-C, C++ support in the works.",
   "keywords": [
     "atom-package",
     "atom-ide",

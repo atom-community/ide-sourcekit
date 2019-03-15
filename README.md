@@ -4,7 +4,7 @@
 
 C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple.
 
-This is still in an **experimental** package.
+This is still in an **experimental** package. Last I checked, Swift is the _only_ programming language that's working :(. Once Apple supports C languages better, this package should be able to support it.
 
 ## Getting Started
 
