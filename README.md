@@ -7,11 +7,11 @@ C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [So
 ## Getting Started
 
 ### Installation
-Install these the needed packages from:
-https://atom.io/packages/ide-sourcekit
-https://atom.io/packages/atom-ide-base
+
+Install these the needed packages from: [ide-sourcekit](https://atom.io/packages/ide-sourcekit) and [atom-ide-base](https://atom.io/packages/atom-ide-base).
 
 or using command line:
+
 ```
 apm install ide-sourcekit
 apm install atom-ide-base
@@ -23,9 +23,9 @@ You need to have [sourcekit-lsp](https://github.com/apple/sourcekit-lsp) on the 
 
 The current installation methods are:
 
-1) If you have installed Xcode 11.4+ or the corresponding Command Line Tools package, the SourceKit-LSP server is included and can be run with xcrun sourcekit-lsp.
+1. If you have installed Xcode 11.4+ or the corresponding Command Line Tools package, the SourceKit-LSP server is included and can be run with xcrun sourcekit-lsp.
 
-2) Download and install the Swift toolchain which includes `sourcekit-lsp`
+2. Download and install the Swift toolchain which includes `sourcekit-lsp`
    https://swift.org/download/#releases
 
 Once installed add the location of `sourcekit-lsp` binary to PATH or the settings of `ide-sourcekit`
