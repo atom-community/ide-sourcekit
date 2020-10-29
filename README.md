@@ -1,22 +1,36 @@
 # IDE-SourceKit package
 
-[![Build Status](https://badgen.net/travis/atom-ide-community/ide-sourcekit/master)](https://travis-ci.org/atom-ide-community/ide-sourcekit)
+![CI](https://github.com/atom-ide-community/ide-sourcekit/workflows/CI/badge.svg)
 
-C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple.
-
-This is still in an **experimental** package. Last I checked, Swift is the _only_ programming language that's working :(. Once Apple supports C languages better, this package should be able to support it.
+C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple (only on Macos or Linux).
 
 ## Getting Started
 
-### Install Package
-Run `apm install ide-sourcekit`
+### Installation
+Install these the needed packages from:
+https://atom.io/packages/ide-sourcekit
+https://atom.io/packages/atom-ide-base
 
-### Install LSP Package
+or using command line:
+```
+apm install ide-sourcekit
+apm install atom-ide-base
+```
 
-Install either [Atom IDE UI](atom://settings-view/show-package?package=atom-ide-ui) or [Atom Community IDE packages](https://atom-ide-community.github.io). Without these, nothing will work.
+### Adding `sourcekit-lsp` Path
 
-### Configure Package
-Something that you'll need to do in order to use the package is configure the sourcekit-lsp path location. Follow the instructions on [sourcekit-lsp](https://github.com/apple/sourcekit-lsp) in order to get the sourcekit-lsp binary.
+You need to have [sourcekit-lsp](https://github.com/apple/sourcekit-lsp) on the PATH or add its full path inside the settings of `ide-sourcekit`.
+
+The current installation methods are:
+
+1) If you have installed Xcode 11.4+ or the corresponding Command Line Tools package, the SourceKit-LSP server is included and can be run with xcrun sourcekit-lsp.
+
+2) Download and install the Swift toolchain which includes `sourcekit-lsp`
+   https://swift.org/download/#releases
+
+Once installed add the location of `sourcekit-lsp` binary to PATH or the settings of `ide-sourcekit`
+
+Note: `sourcekit-lsp` is not available on Windows. See [here](https://forums.swift.org/t/sourcekit-lsp-on-windows/40087/4).
 
 ### Reload
 
