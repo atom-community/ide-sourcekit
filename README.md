@@ -2,9 +2,7 @@
 
 [![Build Status](https://badgen.net/travis/atom-ide-community/ide-sourcekit/master)](https://travis-ci.org/atom-ide-community/ide-sourcekit)
 
-C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple.
-
-This is still in an **experimental** package. Last I checked, Swift is the _only_ programming language that's working :(. Once Apple supports C languages better, this package should be able to support it.
+C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple (only on Macos or Linux).
 
 ## Getting Started
 
@@ -31,6 +29,8 @@ The current installation methods are:
    https://swift.org/download/#releases
 
 Once installed add the location of `sourcekit-lsp` binary to PATH or the settings of `ide-sourcekit`
+
+Note: `sourcekit-lsp` is not available on Windows. See [here](https://forums.swift.org/t/sourcekit-lsp-on-windows/40087/4).
 
 ### Reload
 
