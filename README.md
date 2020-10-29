@@ -1,6 +1,6 @@
 # IDE-SourceKit package
 
-[![Build Status](https://badgen.net/travis/atom-ide-community/ide-sourcekit/master)](https://travis-ci.org/atom-ide-community/ide-sourcekit)
+![CI](https://github.com/atom-ide-community/ide-sourcekit/workflows/CI/badge.svg)
 
 C, C++, Objective-C, and Swift language support for Atom-IDE, powered by the [SourceKit Language Server](https://github.com/apple/sourcekit-lsp) by Apple (only on Macos or Linux).
 
