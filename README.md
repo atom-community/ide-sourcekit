@@ -8,17 +8,29 @@ This is still in an **experimental** package. Last I checked, Swift is the _only
 
 ## Getting Started
 
-### Install Package
+### Installation
+Install these the needed packages from:
+https://atom.io/packages/ide-sourcekit
+https://atom.io/packages/atom-ide-base
 
-Run `apm install ide-sourcekit`
+or using command line:
+```
+apm install ide-sourcekit
+apm install atom-ide-base
+```
 
-### Install LSP Package
+### Adding `sourcekit-lsp` Path
 
-Install either [Atom IDE UI](atom://settings-view/show-package?package=atom-ide-ui) or [Atom Community IDE packages](https://atom-ide-community.github.io). Without these, nothing will work.
+You need to have [sourcekit-lsp](https://github.com/apple/sourcekit-lsp) on the PATH or add its full path inside the settings of `ide-sourcekit`.
 
-### Configure Package
+The current installation methods are:
 
-Something that you'll need to do in order to use the package is configure the sourcekit-lsp path location. Follow the instructions on [sourcekit-lsp](https://github.com/apple/sourcekit-lsp) in order to get the sourcekit-lsp binary.
+1) If you have installed Xcode 11.4+ or the corresponding Command Line Tools package, the SourceKit-LSP server is included and can be run with xcrun sourcekit-lsp.
+
+2) Download and install the Swift toolchain which includes `sourcekit-lsp`
+   https://swift.org/download/#releases
+
+Once installed add the location of `sourcekit-lsp` binary to PATH or the settings of `ide-sourcekit`
 
 ### Reload
 
