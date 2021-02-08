@@ -1,22 +1,37 @@
 dependencies:
-  atom-languageclient: 0.9.9
+  atom-languageclient: 1.0.7
 devDependencies:
   prettier: 2.1.2
 lockfileVersion: 5.2
 packages:
-  /atom-languageclient/0.9.9:
+  /atom-languageclient/1.0.7:
     dependencies:
-      fuzzaldrin-plus: 0.6.0
-      vscode-jsonrpc: 4.0.0
-      vscode-languageserver-protocol: 3.12.0
-      vscode-languageserver-types: 3.12.0
+      vscode-jsonrpc: 5.0.1
+      vscode-languageserver-protocol: 3.15.3
+      vscode-languageserver-types: 3.15.1
+      zadeh: 2.0.2
     dev: false
     resolution:
-      integrity: sha512-eAKLFhprcDksPtDtG2lrhQEosNMxEbS7MISpw7n6TIoPmTgolvo+GPAF+nSV+Z9MCss91i+M+TNk9Mj5C7y/CQ==
-  /fuzzaldrin-plus/0.6.0:
+      integrity: sha512-9EVcfKCD/fu8Itn7BJhknZaojg4jpb2yYG4IwgFVYncPp9x61JMto1UXVxK+MWHaf+OT6HqPdaQDQEpCvlZgBQ==
+  /bindings/1.5.0:
+    dependencies:
+      file-uri-to-path: 1.0.0
     dev: false
     resolution:
-      integrity: sha1-gy9kifvodnaUWVmckUpnDsIpR+4=
+      integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
+  /file-uri-to-path/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
+  /node-addon-api/3.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==
+  /node-gyp-build/4.2.3:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-MN6ZpzmfNCRM+3t57PTJHgHyw/h4OWnZ6mR8P5j/uZtqQr46RRuDE/P+g3n0YR/AiYXeWixZZzaip77gdICfRg==
   /prettier/2.1.2:
     dev: true
     engines:
@@ -24,29 +39,32 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
-  /vscode-jsonrpc/3.6.2:
-    dev: false
-    engines:
-      node: '>=4.0.0 || >=6.0.0'
-    resolution:
-      integrity: sha512-T24Jb5V48e4VgYliUXMnZ379ItbrXgOimweKaJshD84z+8q7ZOZjJan0MeDe+Ugb+uqERDVV8SBmemaGMSMugA==
-  /vscode-jsonrpc/4.0.0:
+  /vscode-jsonrpc/5.0.1:
     dev: false
     engines:
       node: '>=8.0.0 || >=10.0.0'
     resolution:
-      integrity: sha512-perEnXQdQOJMTDFNv+UF3h1Y0z4iSiaN9jIlb0OqIYgosPCZGYh/MCUlkFtV2668PL69lRDO32hmvL2yiidUYg==
-  /vscode-languageserver-protocol/3.12.0:
+      integrity: sha512-JvONPptw3GAQGXlVV2utDcHx0BiY34FupW/kI6mZ5x06ER5DdPG/tXWMVHjTNULF5uKPOUUD0SaXg5QaubJL0A==
+  /vscode-languageserver-protocol/3.15.3:
     dependencies:
-      vscode-jsonrpc: 3.6.2
-      vscode-languageserver-types: 3.12.0
+      vscode-jsonrpc: 5.0.1
+      vscode-languageserver-types: 3.15.1
     dev: false
     resolution:
-      integrity: sha512-evY6hmyzLnwQrqlQWPrNBq1z8wrSNjLesmgPzeS6Zv11mVS5UJRel26hbM/DH5tHdn45huNzRW0eFHRmIm8LpA==
-  /vscode-languageserver-types/3.12.0:
+      integrity: sha512-zrMuwHOAQRhjDSnflWdJG+O2ztMWss8GqUUB8dXLR/FPenwkiBNkMIJJYfSN6sgskvsF0rHAoBowNQfbyZnnvw==
+  /vscode-languageserver-types/3.15.1:
     dev: false
     resolution:
-      integrity: sha512-UxqnpzBToPO7Mi2tr/s5JeyPOSKSJtLB8lIdxCg9ZNdvP2cU8wS7iTDtwQKz91Ne4CUmTdf85ddR5SIZKXmMjQ==
+      integrity: sha512-+a9MPUQrNGRrGU630OGbYVQ+11iOIovjCkqxajPa9w57Sd5ruK8WQNsslzpa0x/QJqC8kRc2DUxWjIFwoNm4ZQ==
+  /zadeh/2.0.2:
+    dependencies:
+      bindings: 1.5.0
+      node-addon-api: 3.1.0
+      node-gyp-build: 4.2.3
+    dev: false
+    requiresBuild: true
+    resolution:
+      integrity: sha512-20vaD+PTkqYHuvKMDMfFSOYaw4QB6tLQQteHF2mjhnXfeyP0+sCEaord7mI5QdPwrOnR4TAMi9AS2zBL/HA0BQ==
 specifiers:
-  atom-languageclient: ^0.9.9
+  atom-languageclient: ^1.0.0
   prettier: ^2.1.2
