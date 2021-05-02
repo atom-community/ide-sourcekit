@@ -29,6 +29,7 @@
     "atom-languageclient": "^1.8.3"
   },
   "devDependencies": {
+    "eslint-config-atomic": "^1.14.3",
     "prettier-config-atomic": "^2.0.3"
   },
   "prettier": "prettier-config-atomic",
