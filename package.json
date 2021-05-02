@@ -20,7 +20,8 @@
     "format": "prettier --write .",
     "test.format": "prettier . --check",
     "lint": "eslint . --fix",
-    "test.lint": "eslint ."
+    "test.lint": "eslint .",
+    "test": "atom --test spec"
   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -29,10 +30,12 @@
     "atom-languageclient": "^1.8.3"
   },
   "devDependencies": {
+    "atom-jasmine3-test-runner": "^5.2.3",
     "eslint-config-atomic": "^1.14.3",
     "prettier-config-atomic": "^2.0.3"
   },
   "prettier": "prettier-config-atomic",
+  "atomTestRunner": "./spec/runner",
   "configSchema": {
     "sourceKitServer": {
       "title": "SourceKit server",
