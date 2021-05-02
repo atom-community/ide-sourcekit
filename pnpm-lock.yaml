@@ -1,70 +1,315 @@
+lockfileVersion: 5.3
+
+specifiers:
+  atom-languageclient: ^1.8.3
+  prettier: ^2.2.1
+
 dependencies:
-  atom-languageclient: 1.0.7
+  atom-languageclient: 1.8.3
+
 devDependencies:
-  prettier: 2.1.2
-lockfileVersion: 5.2
+  prettier: 2.2.1
+
 packages:
-  /atom-languageclient/1.0.7:
+
+  /@types/atom/1.40.10:
+    resolution: {integrity: sha512-aNFUhCuR6nmTTMoYKfWWMifZ3IcNETLWC75hCdg3i1/OvirfR/5qm1wfiISBb4s/TPM2YVEtxytCdWhKJuEhzw==}
     dependencies:
-      vscode-jsonrpc: 5.0.1
-      vscode-languageserver-protocol: 3.15.3
-      vscode-languageserver-types: 3.15.1
-      zadeh: 2.0.2
+      '@types/node': 14.14.43
     dev: false
-    resolution:
-      integrity: sha512-9EVcfKCD/fu8Itn7BJhknZaojg4jpb2yYG4IwgFVYncPp9x61JMto1UXVxK+MWHaf+OT6HqPdaQDQEpCvlZgBQ==
+
+  /@types/dompurify/2.2.2:
+    resolution: {integrity: sha512-8nNWfAa8/oZjH3OLY5Wsxu9ueo0NwVUotIi353g0P2+N5BuTLJyAVOnF4xBUY0NyFUGJHY05o1pO2bqLto+lmA==}
+    dependencies:
+      '@types/trusted-types': 2.0.0
+    dev: false
+
+  /@types/glob/7.1.3:
+    resolution: {integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==}
+    dependencies:
+      '@types/minimatch': 3.0.4
+      '@types/node': 15.0.1
+    dev: false
+
+  /@types/minimatch/3.0.4:
+    resolution: {integrity: sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==}
+    dev: false
+
+  /@types/node/14.14.43:
+    resolution: {integrity: sha512-3pwDJjp1PWacPTpH0LcfhgjvurQvrZFBrC6xxjaUEZ7ifUtT32jtjPxEMMblpqd2Mvx+k8haqQJLQxolyGN/cQ==}
+    dev: false
+
+  /@types/node/15.0.1:
+    resolution: {integrity: sha512-TMkXt0Ck1y0KKsGr9gJtWGjttxlZnnvDtphxUOSd0bfaR6Q1jle+sPvrzNR1urqYTWMinoKvjKfXUGsumaO1PA==}
+    dev: false
+
+  /@types/prop-types/15.7.3:
+    resolution: {integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==}
+    dev: false
+
+  /@types/react-dom/17.0.3:
+    resolution: {integrity: sha512-4NnJbCeWE+8YBzupn/YrJxZ8VnjcJq5iR1laqQ1vkpQgBiA7bwk0Rp24fxsdNinzJY2U+HHS4dJJDPdoMjdJ7w==}
+    dependencies:
+      '@types/react': 17.0.4
+    dev: false
+
+  /@types/react/17.0.4:
+    resolution: {integrity: sha512-onz2BqScSFMoTRdJUZUDD/7xrusM8hBA2Fktk2qgaTYPCgPvWnDEgkrOs8hhPUf2jfcIXkJ5yK6VfYormJS3Jw==}
+    dependencies:
+      '@types/prop-types': 15.7.3
+      '@types/scheduler': 0.16.1
+      csstype: 3.0.8
+    dev: false
+
+  /@types/rimraf/3.0.0:
+    resolution: {integrity: sha512-7WhJ0MdpFgYQPXlF4Dx+DhgvlPCfz/x5mHaeDQAKhcenvQP1KCpLQ18JklAqeGMYSAT2PxLpzd0g2/HE7fj7hQ==}
+    dependencies:
+      '@types/glob': 7.1.3
+      '@types/node': 15.0.1
+    dev: false
+
+  /@types/scheduler/0.16.1:
+    resolution: {integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==}
+    dev: false
+
+  /@types/trusted-types/2.0.0:
+    resolution: {integrity: sha512-I8MnZqNXsOLHsU111oHbn3khtvKMi5Bn4qVFsIWSJcCP1KKDiXX5AEw8UPk0nSopeC+Hvxt6yAy1/a5PailFqg==}
+    dev: false
+
+  /atom-ide-base/2.6.0:
+    resolution: {integrity: sha512-ZdRehC6FxVYhKJekja4tIT8EAqPQUlNnTtYi5825K/+mP6M6exzLKXzi30okoOopXW68k8X2COIZXTU1/r+Osg==}
+    engines: {atom: '>=0.174.0 <2.0.0', pnpm: '>=5.12'}
+    dependencies:
+      '@types/atom': 1.40.10
+      '@types/dompurify': 2.2.2
+      '@types/node': 14.14.43
+      '@types/react': 17.0.4
+      '@types/react-dom': 17.0.3
+      atom-ide-markdown-service: 2.1.0
+      atom-package-deps: 7.2.3
+      classnames: 2.3.1
+      dompurify: 2.2.8
+      etch: 0.14.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      rxjs: 6.6.7
+    dev: false
+
+  /atom-ide-markdown-service/2.1.0:
+    resolution: {integrity: sha512-tbOMGVwOHgAwY8scx2maimConxQLKaFYEsaUs8sqOd9FVMGiulxg3XG0IGrhpdxd8nM3QqZLmFFX4fUExqe3UA==}
+    engines: {atom: '>=1.0.0 <2.0.0'}
+    dependencies:
+      dompurify: 2.2.8
+      marked: 1.2.9
+    dev: false
+
+  /atom-languageclient/1.8.3:
+    resolution: {integrity: sha512-AVKb8rBOpTNQDrmxLbiQqMktwzGmMiIvsBMDF+Zs4XYoWYoUivYr0YpDfUQ57WsS7nZKwFCAqjrmkRQWTxAfMQ==}
+    dependencies:
+      '@types/rimraf': 3.0.0
+      atom-ide-base: 2.6.0
+      rimraf: 3.0.2
+      vscode-jsonrpc: 6.0.0
+      vscode-languageserver-protocol: 3.16.0
+      vscode-languageserver-types: 3.16.0
+      zadeh: 3.0.0-beta.2
+    dev: false
+
+  /atom-package-deps/7.2.3:
+    resolution: {integrity: sha512-Z1FHJS2c2xBN3wQVniG7jXDyE4mUjZlHA0tfIkCND9U/fHaZyBJPno4/jD8PtYUnhlymaHRbCsgxCU3QuKjqfQ==}
+    hasBin: true
+    dev: false
+
+  /balanced-match/1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+    dev: false
+
   /bindings/1.5.0:
+    resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
-    resolution:
-      integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
-  /file-uri-to-path/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
-  /node-addon-api/3.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==
-  /node-gyp-build/4.2.3:
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha512-MN6ZpzmfNCRM+3t57PTJHgHyw/h4OWnZ6mR8P5j/uZtqQr46RRuDE/P+g3n0YR/AiYXeWixZZzaip77gdICfRg==
-  /prettier/2.1.2:
-    dev: true
-    engines:
-      node: '>=10.13.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
-  /vscode-jsonrpc/5.0.1:
-    dev: false
-    engines:
-      node: '>=8.0.0 || >=10.0.0'
-    resolution:
-      integrity: sha512-JvONPptw3GAQGXlVV2utDcHx0BiY34FupW/kI6mZ5x06ER5DdPG/tXWMVHjTNULF5uKPOUUD0SaXg5QaubJL0A==
-  /vscode-languageserver-protocol/3.15.3:
+
+  /brace-expansion/1.1.11:
+    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
-      vscode-jsonrpc: 5.0.1
-      vscode-languageserver-types: 3.15.1
+      balanced-match: 1.0.2
+      concat-map: 0.0.1
     dev: false
-    resolution:
-      integrity: sha512-zrMuwHOAQRhjDSnflWdJG+O2ztMWss8GqUUB8dXLR/FPenwkiBNkMIJJYfSN6sgskvsF0rHAoBowNQfbyZnnvw==
-  /vscode-languageserver-types/3.15.1:
+
+  /classnames/2.3.1:
+    resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
     dev: false
-    resolution:
-      integrity: sha512-+a9MPUQrNGRrGU630OGbYVQ+11iOIovjCkqxajPa9w57Sd5ruK8WQNsslzpa0x/QJqC8kRc2DUxWjIFwoNm4ZQ==
-  /zadeh/2.0.2:
+
+  /concat-map/0.0.1:
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    dev: false
+
+  /csstype/3.0.8:
+    resolution: {integrity: sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==}
+    dev: false
+
+  /dompurify/2.2.8:
+    resolution: {integrity: sha512-9H0UL59EkDLgY3dUFjLV6IEUaHm5qp3mxSqWw7Yyx4Zhk2Jn2cmLe+CNPP3xy13zl8Bqg+0NehQzkdMoVhGRww==}
+    dev: false
+
+  /etch/0.14.1:
+    resolution: {integrity: sha512-+IwqSDBhaQFMUHJu4L/ir0dhDoW5IIihg4Z9lzsIxxne8V0PlSg0gnk2STaKWjGJQnDR4cxpA+a/dORX9kycTA==}
+    dev: false
+
+  /file-uri-to-path/1.0.0:
+    resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    dev: false
+
+  /fs.realpath/1.0.0:
+    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    dev: false
+
+  /glob/7.1.6:
+    resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 3.0.4
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    dev: false
+
+  /inflight/1.0.6:
+    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
+    dependencies:
+      once: 1.4.0
+      wrappy: 1.0.2
+    dev: false
+
+  /inherits/2.0.4:
+    resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
+    dev: false
+
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
+  /marked/1.2.9:
+    resolution: {integrity: sha512-H8lIX2SvyitGX+TRdtS06m1jHMijKN/XjfH6Ooii9fvxMlh8QdqBfBDkGUpMWH2kQNrtixjzYUa3SH8ROTgRRw==}
+    engines: {node: '>= 8.16.2'}
+    hasBin: true
+    dev: false
+
+  /minimatch/3.0.4:
+    resolution: {integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==}
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: false
+
+  /node-addon-api/3.1.0:
+    resolution: {integrity: sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==}
+    dev: false
+
+  /node-gyp-build/4.2.3:
+    resolution: {integrity: sha512-MN6ZpzmfNCRM+3t57PTJHgHyw/h4OWnZ6mR8P5j/uZtqQr46RRuDE/P+g3n0YR/AiYXeWixZZzaip77gdICfRg==}
+    hasBin: true
+    dev: false
+
+  /object-assign/4.1.1:
+    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /once/1.4.0:
+    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    dependencies:
+      wrappy: 1.0.2
+    dev: false
+
+  /path-is-absolute/1.0.1:
+    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /prettier/2.2.1:
+    resolution: {integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /react-dom/17.0.2_react@17.0.2:
+    resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
+    peerDependencies:
+      react: 17.0.2
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react: 17.0.2
+      scheduler: 0.20.2
+    dev: false
+
+  /react/17.0.2:
+    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
+
+  /rimraf/3.0.2:
+    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    hasBin: true
+    dependencies:
+      glob: 7.1.6
+    dev: false
+
+  /rxjs/6.6.7:
+    resolution: {integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==}
+    engines: {npm: '>=2.0.0'}
+    dependencies:
+      tslib: 1.14.1
+    dev: false
+
+  /scheduler/0.20.2:
+    resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
+
+  /tslib/1.14.1:
+    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+    dev: false
+
+  /vscode-jsonrpc/6.0.0:
+    resolution: {integrity: sha512-wnJA4BnEjOSyFMvjZdpiOwhSq9uDoK8e/kpRJDTaMYzwlkrhG1fwDIZI94CLsLzlCK5cIbMMtFlJlfR57Lavmg==}
+    engines: {node: '>=8.0.0 || >=10.0.0'}
+    dev: false
+
+  /vscode-languageserver-protocol/3.16.0:
+    resolution: {integrity: sha512-sdeUoAawceQdgIfTI+sdcwkiK2KU+2cbEYA0agzM2uqaUy2UpnnGHtWTHVEtS0ES4zHU0eMFRGN+oQgDxlD66A==}
+    dependencies:
+      vscode-jsonrpc: 6.0.0
+      vscode-languageserver-types: 3.16.0
+    dev: false
+
+  /vscode-languageserver-types/3.16.0:
+    resolution: {integrity: sha512-k8luDIWJWyenLc5ToFQQMaSrqCHiLwyKPHKPQZ5zz21vM+vIVUSvsRpcbiECH4WR88K2XZqc4ScRcZ7nk/jbeA==}
+    dev: false
+
+  /wrappy/1.0.2:
+    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    dev: false
+
+  /zadeh/3.0.0-beta.2:
+    resolution: {integrity: sha512-HHLvrzoeegMkuXaXrQUlQJVRTM2nl23g/obw0ENfMu+xQL+VJA3SQl7cQ73btyUNAQZsrWf9FMegbVLLHOhORg==}
+    requiresBuild: true
     dependencies:
       bindings: 1.5.0
       node-addon-api: 3.1.0
       node-gyp-build: 4.2.3
     dev: false
-    requiresBuild: true
-    resolution:
-      integrity: sha512-20vaD+PTkqYHuvKMDMfFSOYaw4QB6tLQQteHF2mjhnXfeyP0+sCEaord7mI5QdPwrOnR4TAMi9AS2zBL/HA0BQ==
-specifiers:
-  atom-languageclient: ^1.0.0
-  prettier: ^2.1.2

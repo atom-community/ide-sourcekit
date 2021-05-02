@@ -26,10 +26,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^1.0.0"
+    "atom-languageclient": "^1.8.3"
   },
   "devDependencies": {
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.1"
   },
   "configSchema": {
     "sourceKitServer": {
