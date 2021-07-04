@@ -27,7 +27,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-languageclient": "^1.8.3"
+    "atom-languageclient": "^1.14.0"
   },
   "devDependencies": {
     "atom-jasmine3-test-runner": "^5.2.3",
