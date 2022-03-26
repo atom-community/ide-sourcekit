@@ -32,7 +32,7 @@
   "devDependencies": {
     "atom-jasmine3-test-runner": "^5.2.3",
     "eslint-config-atomic": "^1.14.3",
-    "prettier-config-atomic": "^2.0.3"
+    "prettier-config-atomic": "^3.0.0"
   },
   "prettier": "prettier-config-atomic",
   "atomTestRunner": "./spec/runner",
